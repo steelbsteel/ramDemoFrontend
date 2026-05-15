@@ -1,0 +1,4 @@
+{
+    "ENV": "dev",
+    "BASE_API": "https://rickandmortyapi.com"
+}
