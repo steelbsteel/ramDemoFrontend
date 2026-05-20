@@ -14,15 +14,18 @@ dependencies:
 
   # UI
   cupertino_icons: ^1.0.8
+
+  # UI Tools
   flutter_svg: ^2.2.4
   toastification: ^3.0.3
+  cached_network_image: ^3.4.1
 
   # Dependency Injection
   get_it: ^9.2.1
   injectable: ^2.7.1+4
 
   # Localization
-  slang_flutter: ^4.14.0
+  slang_flutter: 4.12.1
   flutter_localizations:
     sdk: flutter
 
@@ -57,6 +60,8 @@ dependencies:
   json_annotation: ^4.11.0
   gql: ^1.0.1
   intl: ^0.20.2
+  html: ^0.15.6
+  flutter_cache_manager: ^3.4.1
 
 dev_dependencies:
   flutter_test:
@@ -84,15 +89,15 @@ flutter:
   fonts:
     - family: Golos
       fonts:
-        - asset: assets/fonts/GolosText-Black.ttf
+        - asset: assets/fonts/golos/GolosText-Black.ttf
           weight: 900
-        - asset: assets/fonts/GolosText-ExtraBold.ttf
+        - asset: assets/fonts/golos/GolosText-ExtraBold.ttf
           weight: 800
-        - asset: assets/fonts/GolosText-Bold.ttf
+        - asset: assets/fonts/golos/GolosText-Bold.ttf
           weight: 700
-        - asset: assets/fonts/GolosText-SemiBold.ttf
+        - asset: assets/fonts/golos/GolosText-SemiBold.ttf
           weight: 600
-        - asset: assets/fonts/GolosText-Medium.ttf
+        - asset: assets/fonts/golos/GolosText-Medium.ttf
           weight: 500
-        - asset: assets/fonts/GolosText-Regular.ttf
+        - asset: assets/fonts/golos/GolosText-Regular.ttf
           weight: 400
