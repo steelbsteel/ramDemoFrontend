@@ -1,0 +1,31 @@
+targets:
+  $default:
+    builders:
+      slang_build_runner:
+        options:
+          base_locale: ru
+          fallback_strategy: base_locale
+          input_directory: assets/l10n
+          input_file_pattern: .l10n.json
+          output_directory: lib/core/gen/l10n
+          output_file_name: strings.g.dart
+
+      flutter_gen_runner:
+        options:
+          output: lib/core/gen/assets
+          integrations:
+            image: true
+            flutter_svg: true
+
+      graphql_codegen:
+        options:
+          clients:
+            - graphql
+          scalars:
+            DateTime:
+              type: DateTime
+            Date:
+              type: DateTime
+            Upload:
+              type: MultipartFile
+              import: package:dio/dio.dart
