@@ -1,0 +1,29 @@
+fragment CharacterFragment on Character{
+    id
+    name
+    status
+    species
+    type
+    gender
+    origin
+    location
+    image
+    episode
+    created
+}
+
+fragment InfoFragment on Info{
+    count
+    pages
+    next
+    prev
+}
+
+fragment LocationFragment on Location{
+    id
+    name
+    type
+    dimension
+    residents
+    created
+}
