@@ -15,7 +15,8 @@ class AppRouter extends RootStackRouter{
     AutoRoute(
       page: SplashRoute.page,
       type: _fadeIn,
-      path: AppValues.splashPath
+      path: AppValues.splashPath,
+      initial: true
     )
   ];
 }
