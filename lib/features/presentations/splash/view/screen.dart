@@ -12,7 +12,9 @@ class SplashScreen extends StatefulWidget {
 class _SplashScreenState extends State<SplashScreen> {
   int _counter = 0;
 
-  void _incrementCounter() => _counter++;
+  void _incrementCounter() => setState(() {
+    _counter++;
+  });
 
   @override
   Widget build(BuildContext context) {
