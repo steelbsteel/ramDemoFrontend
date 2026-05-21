@@ -41,6 +41,7 @@ class Translations with BaseTranslations<AppLocale, Translations> {
 
 	// Translations
 	late final TranslationsCommonRu common = TranslationsCommonRu.internal(_root);
+	late final TranslationsErrorsRu errors = TranslationsErrorsRu.internal(_root);
 }
 
 // Path: common
@@ -55,6 +56,24 @@ class TranslationsCommonRu {
 	String get rickAndMorty => 'Рик и Морти';
 }
 
+// Path: errors
+class TranslationsErrorsRu {
+	TranslationsErrorsRu.internal(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+
+	/// ru: 'Нет интернета'
+	String get noInternet => 'Нет интернета';
+
+	/// ru: 'Ошибка досупа к кэшу'
+	String get cache => 'Ошибка досупа к кэшу';
+
+	/// ru: 'Неизвестная ошибка'
+	String get unknown => 'Неизвестная ошибка';
+}
+
 /// The flat map containing all translations for locale <ru>.
 /// Only for edge cases! For simple maps, use the map function of this library.
 ///
@@ -64,6 +83,9 @@ extension on Translations {
 	dynamic _flatMapFunction(String path) {
 		return switch (path) {
 			'common.rickAndMorty' => 'Рик и Морти',
+			'errors.noInternet' => 'Нет интернета',
+			'errors.cache' => 'Ошибка досупа к кэшу',
+			'errors.unknown' => 'Неизвестная ошибка',
 			_ => null,
 		};
 	}
